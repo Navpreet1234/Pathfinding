@@ -1,2 +1,0 @@
-3,4 8,8 7,1,4,9,5,5 astaralgo Allow_Diagonal Manhattan                
-    
