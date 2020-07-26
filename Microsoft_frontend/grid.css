@@ -1,0 +1,57 @@
+.Grid {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: slategrey;
+    padding-left: 15px;
+    
+}
+.cell {
+    background-color: white;
+    /* margin: 1px; */
+    height: 39px;
+    min-width: 39px;
+    /* width: 44px; */
+    border: 1px solid;
+}
+.row{
+    display: flex;
+}
+.search{
+    
+    
+    position: fixed;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 40px;
+    top:0;
+    background-color: #357d8f;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 20%;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.search:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+
+  .search:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }

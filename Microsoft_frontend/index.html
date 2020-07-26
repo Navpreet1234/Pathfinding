@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Algorithms </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h1>
+    Navigate the Mars rover
+  </h1>
+  <div>
+    <h3>INSTRUCTIONS</h3>
+    <ol>
+      <li>Choose any one of the algorithm, heuristics and diagonal options</li>
+      <li>Click on the cell where you want to begin <span id="Source">(Source)</span></li>
+      <li>Click on the cell to select end <span id="Destination">(Destination)</span></li>
+      <li>Click on the cells to create <span id="obstacles">obstacles</span> between the path</li>
+      <li>Click on the button start search after clicking on the next page</li>
+    </ol>
+  </div>
+  <h4>A* algorithm</h4>
+  <div>
+    <input type="radio" name="1" value="astaralgo" class ="algotype">
+    A* Algorithm : A* is an informed search algorithm, meaning that it is formulated in terms of weighted graphs i.e.
+    starting from a specific starting node of a graph, it aims to find a path to the given goal node having the smallest
+    cost.
+    <h5>Heuristic</h5>
+    <div id="A_star" class="sub_options">
+      <input type="radio" name="2" value="Manhattan" class="typeHeuristic" />
+      <label> Manhattan</label> <br>
+      <input type="radio" name="2" value="Euclidean" class="typeHeuristic" />
+      <label> Euclidean</label> <br>
+      <input type="radio" name="2" value="Diagonal" class="typeHeuristic"/>
+      <label> Chebyshev</label> <br>
+    </div>
+    <h5>Options</h5>
+    <div>
+      <input type="radio" name="3" value="Allow_Diagonal" class="isdiagonal">
+      <label>Allow Diagonal</label> <br>
+      <input type="radio" name="3" value="Don't_Allow_Diagonal" class="isdiagonal">
+      <label>Don't Allow Diagonal</label> <br>
+    </div>
+  </div>
+  <h4>Breadth first search algorithm</h4>
+  <div>
+    <input type="radio" name="1" value="bfs"  class ="algotype">
+    Breadth First Search Algorithm : In this algorithm, we start at the tree root and explore all of the neighbor nodes
+    at the present depth prior to moving on to the nodes at the next depth level.
+    <h5>Options</h5>
+    <div>
+      <input type="radio" name="3" value="Allow_Diagonal" class="isdiagonal">
+      <label>Allow Diagonal</label> <br>
+      <input type="radio" name="3" value="Don't _Allow Diagonal"class="isdiagonal">
+      <label>Don't Allow Diagonal</label> <br>
+    </div>
+  </div>
+  <h4>Best first search algorithm</h4>
+  <div>
+    <input type="radio" name="1" value="BestFirstSearch" class ="algotype">
+    Best First Search Algorithm : In best first search algorithm we use an evaluation function to decide which adjacent
+    is most promising and then explore it.
+    <h5>Heuristic</h5>
+    <div id="best_fs" class="sub_options">
+      <input type="radio" name="2" value="Manhattan"class="typeHeuristic" />
+      <label> Manhattan</label> <br>
+      <input type="radio" name="2" value="Euclidean"class="typeHeuristic" />
+      <label> Euclidean</label> <br>
+      <input type="radio" name="2" value="Chebyshev"class="typeHeuristic" />
+      <label> Chebyshev</label> <br>
+    </div>
+    <h5>Options</h5>
+    <div>
+      <input type="radio" name="3" value="Allow_Diagonal">
+      <label>Allow Diagonal</label> <br>
+      <input type="radio" name="3" value="Don't_Allow_Diagonal">
+      <label>Don't Allow Diagonal</label> <br>
+    </div>
+  </div>
+  <h4>Dijkstra algorithm</h4>
+  <div>
+    <input type="radio" name="1" value="Dijkstra's" class ="algotype">
+    Dijkstra's Algorithm : In this algorithm, for a given source node we find the shortest path between that node and
+    every other. Hence, it can be used for finding the shortest paths from a single node to a single destination node by
+    stopping the algorithm once the shortest path to the destination node has been determined.
+    <h5>Options</h5>
+    <div>
+      <input type="radio" name="3" value="Allow_Diagonal"class="isdiagonal">
+      <label>Allow Diagonal</label> <br>
+      <input type="radio" name="3" value="Don't_Allow_Diagonal"class="isdiagonal">
+      <label>Don't Allow Diagonal</label> <br>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  
+  
+    
+      <button class="next-page">Next Page</button>
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js" crossorigin="true"></script>
+    <script src="script.js"></script>
+  
+</body>
+
+</html>
